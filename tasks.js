@@ -80,6 +80,11 @@ function quit(){
   console.log('Quitting now, goodbye!')
   process.exit();
 }
+/**
+ * Help command
+ *
+ * @returns {void}
+ */
 function help(){
   console.log('Enter hello for hello, quit or exit to exit!')
   process.exit();
