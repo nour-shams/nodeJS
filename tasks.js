@@ -101,6 +101,7 @@ function quit(){
  */
 function help(){
   console.log('Enter hello for hello, quit or exit to exit!')
+  console.log('enter hello and a certain text to get it with an exclamantion mark and space handled')
   process.exit();
 }
 
