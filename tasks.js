@@ -105,11 +105,21 @@ function add(t) {
   }
   function remove(text) 
   {
-    li.splice()
+    
 
     if(text==""){
       li.pop()
     }
+    else if (text > li.length)
+    {
+      console.log('array out of bound')
+    }
+    else
+    {
+      li.splice()
+    }
+
+    
   }
 
   //list
