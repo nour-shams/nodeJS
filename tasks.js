@@ -106,6 +106,10 @@ function add(t) {
   function remove(text) 
   {
     li.splice()
+
+    if(text==""){
+      li.pop()
+    }
   }
 
   //list
