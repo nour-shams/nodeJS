@@ -37,6 +37,9 @@ function onDataReceived(text) {
   start=text.startsWith("hello");
   st=text.startsWith("add");
   
+  rem=text.startsWith("remove");
+
+
   if (text === 'quit\n' || text === 'exit\n') {
     quit();
   }
@@ -57,7 +60,9 @@ function onDataReceived(text) {
   else if(text === 'list\n'){
     list();
   }
-
+  else if(rem){
+    remove();
+  }
   else{
     unknownCommand(text);
   }
@@ -98,9 +103,13 @@ function add(t) {
     }
   
   }
+  function remove(text) 
+  {
+    li.splice()
+  }
 
   //list
-  li=["task0","task1"];
+  li=["task0","task1","task2"];
   function list(){
     
     for(var i=0;i<li.length;i++)
