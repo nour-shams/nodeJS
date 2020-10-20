@@ -72,6 +72,7 @@ function unknownCommand(c){
   function hello(texxt){
     var s2=texxt.split(" ")
     var rep=texxt.replace("\n","")
+    rep=rep.trim()
     if(Boolean(s2[1])==false){
     console.log('hello!')
     }else {
