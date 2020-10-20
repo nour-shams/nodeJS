@@ -142,7 +142,18 @@ function quit(){
  */
 function help(){
   console.log('Enter hello for hello, quit or exit to exit!')
+
   console.log('enter hello and a certain text to get it with an exclamantion mark and space handled')
+ 
+  console.log('enter list to display tasks')
+
+  console.log('add a new task to append to array of tasks using add + x')
+
+  console.log('enter remove to remove the last task')
+
+  console.log('enter remove 2 to remove the SECOND element of the list')
+
+
   process.exit();
 }
 
