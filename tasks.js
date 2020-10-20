@@ -45,6 +45,10 @@ function onDataReceived(text) {
   else if(text === 'help\n'){
     help();
   }
+  else if(text === 'list\n'){
+    list();
+  }
+
   else{
     unknownCommand(text);
   }
@@ -81,7 +85,17 @@ function unknownCommand(c){
   
   }
 
-  
+  //list
+  li=["task0","task1"];
+  function list(){
+    
+    for(var i=0;i<li.length;i++)
+    {
+
+      console.log(i+"-"+li[i]) }
+
+    }
+
 
 
 
@@ -108,3 +122,4 @@ function help(){
 
 // The following line starts the application
 startApp("Nour Shams")
+  
