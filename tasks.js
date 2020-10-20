@@ -35,6 +35,7 @@ function startApp(name){
  */
 function onDataReceived(text) {
   start=text.startsWith("hello");
+  st=text.startsWith("add");
   
   if (text === 'quit\n' || text === 'exit\n') {
     quit();
@@ -44,6 +45,14 @@ function onDataReceived(text) {
   }
   else if(text === 'help\n'){
     help();
+  }
+   else if(text==='add\n'){
+    
+    console.log("plz add more");
+  }
+  else if(st){
+    
+    add(text);
   }
   else if(text === 'list\n'){
     list();
@@ -66,6 +75,11 @@ function unknownCommand(c){
   console.log('unknown command: "'+c.trim()+'"')
 }
 
+function add(t) {
+  substring1= t.substr(4,t.length);
+  
+  li.push(substring1)
+}
 
 /**
  * Says hello
