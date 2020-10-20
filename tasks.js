@@ -49,6 +49,9 @@ function onDataReceived(text) {
   else if(text === 'help\n'){
     help();
   }
+  else if(text === 'edit\n'){
+    edit();
+  }
    else if(text==='add\n'){
     
     console.log("plz add more");
@@ -85,6 +88,23 @@ function add(t) {
   
   li.push(substring1)
 }
+
+  function edit()
+  {
+
+    if (text2 === 'edit')
+    {
+      console.log('error')
+    }
+    else if(text2 === 'edit new text')
+    {
+      tasks[-1]='new text'
+    }
+    else if(text2 === 'edit 1 new text')
+    {
+      tasks[0]='new text'
+    }
+  }
 
 /**
  * Says hello
